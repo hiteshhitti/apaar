@@ -453,7 +453,7 @@
 <script>
   AOS.init({ duration: 1000, once: false });
 </script>
-<script>
+<!-- <script>
   const videos = document.querySelectorAll('.autoplay-on-visible');
 
   const observer = new IntersectionObserver((entries) => {
@@ -470,7 +470,43 @@
   videos.forEach(video => {
     observer.observe(video);
   });
+</script> -->
+
+<script>
+  const videos = document.querySelectorAll('.autoplay-on-visible');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+
+      if (entry.isIntersecting) {
+        // Only load and play if not already playing
+        if (video.readyState >= 3) {
+          video.play().catch(err => {
+            console.warn('Play error:', err);
+          });
+        } else {
+          const onCanPlay = () => {
+            video.play().catch(err => {
+              console.warn('Play error after canplay:', err);
+            });
+            video.removeEventListener('canplaythrough', onCanPlay);
+          };
+          video.addEventListener('canplaythrough', onCanPlay);
+          video.load(); // Force load since preload is "none"
+        }
+      } else {
+        video.pause();
+        video.currentTime = 0;
+      }
+    });
+  }, { threshold: 0.5 });
+
+  videos.forEach(video => {
+    observer.observe(video);
+  });
 </script>
+
 
 </body>
 </html>
