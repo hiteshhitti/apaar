@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apaar Solutions | Security Experts</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+  
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-indigo-700">Apaar Solutions</h1>
+    <nav class="space-x-6 hidden md:flex">
+      <a href="#about" class="hover:text-pink-600 transition duration-300">About</a>
+      <a href="#products" class="hover:text-pink-600 transition duration-300">Products</a>
+      <a href="#demo" class="hover:text-pink-600 transition duration-300">Demo Area</a>
+      <a href="#gallery" class="hover:text-pink-600 transition duration-300">Gallery</a>
+      <a href="#certificates" class="hover:text-pink-600 transition duration-300">Certificates</a>
+      <a href="#support" class="hover:text-pink-600 transition duration-300">Support</a>
+      <a href="#contact" class="hover:text-pink-600 transition duration-300">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<!-- <section class="relative bg-cover bg-center h-screen flex items-center justify-center text-center text-white" style="background-image: url('images/shop/demo-area.jpg');">
+  <div class="bg-black bg-opacity-60 p-8 rounded-lg" data-aos="fade-up">
+    <h2 class="text-5xl font-bold mb-4">Empowering Security with Technology</h2>
+    <p class="text-lg">Surveillance | Biometric | Fire Safety | Access Control</p>
+    <a href="#products" class="mt-6 inline-block px-6 py-3 bg-pink-600 hover:bg-pink-700 rounded text-white transition transform hover:scale-105">Explore Products</a>
+  </div>
+</section> -->
+
+<section class="relative bg-cover bg-center h-screen flex items-center justify-center text-center text-white" style="background-image: url('images/shop/demo-area.jpg');">
+  
+  <!-- Background image behind the grey box -->
+  <div class="absolute inset-0 bg-cover bg-center z-0 rounded-lg" style="background-image: url('images/cover.jpg');"></div>
+  
+  <!-- Grey box content -->
+  <div class="relative bg-black bg-opacity-60 p-8 rounded-lg z-10" data-aos="fade-up">
+    <h2 class="text-5xl font-bold mb-4">Empowering Security with Technology</h2>
+    <p class="text-lg">Surveillance | Biometric | Fire Safety | Access Control</p>
+    <a href="#products" class="mt-6 inline-block px-6 py-3 bg-pink-600 hover:bg-pink-700 rounded text-white transition transform hover:scale-105">Explore Products</a>
+  </div>
+
+</section>
+
+
+<section id="about" class="py-20 bg-gradient-to-r from-indigo-50 to-blue-100">
+  <div class="container mx-auto px-6" data-aos="fade-right">
+    <div class="flex flex-col md:flex-row items-center md:items-start">
+      
+      <!-- Left Column: About Content -->
+      <div class="md:w-1/2 md:pr-10 mb-10 md:mb-0">
+        <h2 class="text-5xl font-extrabold text-indigo-700 mb-6 leading-tight">About Apaar Solutions</h2>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          At <span class="font-semibold text-indigo-800">Apaar Solutions</span>, we are driven by a passion for innovation and a commitment to excellence. 
+          With years of experience in <span class="text-blue-700 font-medium">electronic security, home automation, and surveillance systems</span>, we empower individuals and organizations to create safer, smarter, and more connected environments.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Our journey began with a clear mission: to deliver <span class="font-semibold text-indigo-800">cutting-edge technology solutions</span> with unmatched reliability and service. Whether it's designing customized surveillance networks, automating homes, or integrating smart business systems, we bring your vision to life with precision and professionalism.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Backed by a team of <span class="text-blue-700 font-medium">certified experts and dedicated engineers</span>, we provide end-to-end support — from consultation and demo setups to seamless installations and post-deployment services. 
+          We believe in building long-term relationships based on trust, transparency, and technological excellence.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Join hundreds of satisfied clients who trust Apaar Solutions to protect what matters most — because with us, <span class="font-bold text-indigo-900">Security Meets Intelligence</span>.
+        </p>
+      </div>
+
+      <!-- Right Column: Owner Image -->
+      <div class="md:w-1/2 flex justify-center">
+        <img src="./images/owner.jpeg" alt="Company Owner" class="rounded-2xl shadow-xl w-80 h-auto object-cover border-4 border-indigo-200">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PRODUCTS -->
+<section id="products" class="py-16 bg-gradient-to-r from-pink-50 to-purple-100">
+  <div class="container mx-auto px-4" data-aos="fade-left">
+    <h2 class="text-4xl font-bold text-purple-700 mb-10 text-center">Our Products</h2>
+
+    <!-- Example Product -->
+    <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img src="images/products/cctv.jpg" alt="CCTV" class="rounded shadow-md w-[300px] h-[200px]" >
+        <div>
+          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">CCTV Surveillance</h3>
+          <p class="text-lg">Advanced monitoring for homes and businesses with night vision and cloud recording.</p>
+        </div>
+      </div>
+    </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img src="images/products/vdp.jpg" alt="CCTV" class="rounded shadow-md w-[300px] h-[200px]">
+        <div>
+          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">VDP Video Door Phone</h3>
+          <p class="text-lg">Advanced monitoring for homes and businesses with night vision and cloud recording.</p>
+        </div>
+      </div>
+    </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img src="images/products/alarm.jpg" alt="CCTV" class="rounded shadow-md">
+        <div>
+          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Security Alarm Systems</h3>
+          <p class="text-lg">Advanced monitoring for homes and businesses with night vision and cloud recording.</p>
+        </div>
+      </div>
+    </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img src="images/products/walkie.jpg" alt="CCTV" class="rounded shadow-md">
+        <div>
+          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Walkie Talkie</h3>
+          <p class="text-lg">Advanced monitoring for homes and businesses with night vision and cloud recording.</p>
+        </div>
+      </div>
+    </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img src="images/products/epabx.jpg" alt="CCTV" class="rounded shadow-md">
+        <div>
+          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">EPABX</h3>
+          <p class="text-lg">Advanced monitoring for homes and businesses with night vision and cloud recording.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add other products the same way -->
+
+  </div>
+</section>
+
+<!-- DEMO -->
+<section id="demo" class="py-16 bg-gradient-to-r from-yellow-50 to-emerald-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-emerald-700 mb-6">Office Tour</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <video class="autoplay-on-visible w-full h-64 md:h-80 rounded shadow-lg object-cover" 
+             muted playsinline preload="none">
+        <source src="./videos/IMG_1221.MP4" type="video/mp4">
+      </video>
+      <video class="autoplay-on-visible w-full h-64 md:h-80 rounded shadow-lg object-cover" 
+             muted playsinline preload="none">
+        <source src="./videos/IMG_1482.mp4" type="video/mp4">
+      </video>
+      <video class="autoplay-on-visible w-full h-64 md:h-80 rounded shadow-lg object-cover" 
+             muted playsinline preload="none">
+        <source src="./videos/IMG_6604.MOV" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+
+<section id="gallery" class="py-16 bg-gradient-to-r from-blue-100 to-indigo-100">
+  <div class="container mx-auto px-4" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center">Our Office Gallery</h2>
+
+    <!-- Front Office -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-6">Front Office</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
+        <div class="w-[160px] h-[120px] overflow-hidden rounded-lg shadow-md">
+          <img src="./images/front1.jpeg" alt="Front Office 1" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        </div>
+        <div class="w-[160px] h-[120px] overflow-hidden rounded-lg shadow-md">
+          <img src="./images/front2.jpeg" alt="Front Office 2" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        </div>
+                <div class="w-[160px] h-[120px] overflow-hidden rounded-lg shadow-md">
+          <img src="./images/front3.jpeg" alt="Front Office 2" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        </div>
+        <!-- Add more Front Office images here -->
+      </div>
+    </div>
+
+    <!-- Back Office -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-6">Back Office</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
+        <div class="w-[160px] h-[120px] overflow-hidden rounded-lg shadow-md">
+          <img src="./images/back1.jpeg" alt="Back Office 1" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        </div>
+        <div class="w-[160px] h-[120px] overflow-hidden rounded-lg shadow-md">
+          <img src="./images/back2.jpeg" alt="Back Office 2" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        </div>
+        <!-- Add more Back Office images here -->
+      </div>
+    </div>
+
+    <!-- Store Room -->
+    <div>
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-6">Store Room</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
+        <div class="w-[160px] h-[120px] overflow-hidden rounded-lg shadow-md">
+          <img src="./images/store1.jpeg" alt="Store Room 1" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        </div>
+        <div class="w-[160px] h-[120px] overflow-hidden rounded-lg shadow-md">
+          <img src="./images/store2.jpeg" alt="Store Room 2" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        </div>
+        <div class="w-[160px] h-[120px] overflow-hidden rounded-lg shadow-md">
+          <img src="./images/store3.jpeg" alt="Store Room 2" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        </div>
+        <div class="w-[160px] h-[120px] overflow-hidden rounded-lg shadow-md">
+          <img src="./images/store4.jpeg" alt="Store Room 2" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        </div>
+        <!-- Add more Store Room images here -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="py-16 bg-gradient-to-r from-green-50 to-blue-100">
+  <div class="container mx-auto px-4" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-green-700 mb-10 text-center">Our Certifications</h2>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-items-center">
+
+      <!-- Certificate Item Template -->
+      <a href="images/certificates/cert1.jpg" data-fancybox="gallery" data-caption="Certificate 1" class="w-36 h-24 sm:w-40 sm:h-28 overflow-hidden rounded-md shadow-md block">
+        <img src="images/certificates/cert1.jpg" alt="Certificate 1"
+             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+      </a>
+
+      <a href="images/certificates/cert2.jpg" data-fancybox="gallery" data-caption="Certificate 2" class="w-36 h-24 sm:w-40 sm:h-28 overflow-hidden rounded-md shadow-md block">
+        <img src="images/certificates/cert2.jpg" alt="Certificate 2"
+             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+      </a>
+
+      <a href="images/certificates/cert3.jpg" data-fancybox="gallery" data-caption="Certificate 3" class="w-36 h-24 sm:w-40 sm:h-28 overflow-hidden rounded-md shadow-md block">
+        <img src="images/certificates/cert3.jpg" alt="Certificate 3"
+             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+      </a>
+
+      <a href="images/certificates/cert4.jpg" data-fancybox="gallery" data-caption="Certificate 4" class="w-36 h-24 sm:w-40 sm:h-28 overflow-hidden rounded-md shadow-md block">
+        <img src="images/certificates/cert4.jpg" alt="Certificate 4"
+             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+      </a>
+
+      <a href="images/certificates/cert6.jpg" data-fancybox="gallery" data-caption="Certificate 6" class="w-36 h-24 sm:w-40 sm:h-28 overflow-hidden rounded-md shadow-md block">
+        <img src="images/certificates/cert6.jpg" alt="Certificate 6"
+             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+      </a>
+
+      <a href="images/certificates/cert7.jpg" data-fancybox="gallery" data-caption="Certificate 7" class="w-36 h-24 sm:w-40 sm:h-28 overflow-hidden rounded-md shadow-md block">
+        <img src="images/certificates/cert7.jpg" alt="Certificate 7"
+             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+      </a>
+
+      <a href="images/certificates/cert8.jpg" data-fancybox="gallery" data-caption="Certificate 8" class="w-36 h-24 sm:w-40 sm:h-28 overflow-hidden rounded-md shadow-md block">
+        <img src="images/certificates/cert8.jpg" alt="Certificate 8"
+             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+      </a>
+
+      <a href="images/certificates/cert9.jpg" data-fancybox="gallery" data-caption="Certificate 9" class="w-36 h-24 sm:w-40 sm:h-28 overflow-hidden rounded-md shadow-md block">
+        <img src="images/certificates/cert9.jpg" alt="Certificate 9"
+             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+      </a>
+
+      <!-- Add more certificates as needed -->
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CLIENTS -->
+<section id="clients" class="py-16 bg-gradient-to-r from-purple-50 to-pink-100">
+  <div class="container mx-auto px-4" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-pink-700 mb-10 text-center">Our Prestigious Clients</h2>
+    
+    <!-- Unified Grid Layout for All Logos -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center">
+      <img src="images/clients/client1.png" alt="Client 1" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client2.png" alt="Client 2" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client3.png" alt="Client 3" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client4.png" alt="Client 4" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client5.jpg" alt="Client 5" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client6.png" alt="Client 6" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client7.png" alt="Client 7" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client8.png" alt="Client 8" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client9.png" alt="Client 9" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client10.jpeg" alt="Client 10" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/clientt11.png" alt="Client 11" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client12.png" alt="Client 12" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client13.png" alt="Client 13" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client14.jpg" alt="Client 14" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client15.jpeg" alt="Client 15" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client16.png" alt="Client 16" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client17.png" alt="Client 17" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client18.jpeg" alt="Client 18" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client19.jpg" alt="Client 19" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client20.jpeg" alt="Client 20" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client21.jpeg" alt="Client 21" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client22.png" alt="Client 22" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client23.png" alt="Client 23" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+
+      <!-- Add more logos as needed -->
+    </div>
+  </div>
+</section>
+
+
+<!-- SUPPORT -->
+<section id="support" class="py-16 bg-gradient-to-r from-yellow-50 to-red-100">
+  <div class="container mx-auto px-4" data-aos="fade-left">
+    <h2 class="text-4xl font-bold text-red-600 mb-6">Client Support</h2>
+    <ul class="space-y-4 text-lg">
+      <li>✅ On-site Installation</li>
+      <li>✅ 24x7 Remote Assistance</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT WITH MAP -->
+<section id="contact" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-100">
+  <div class="container mx-auto px-4" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-indigo-700 mb-10 text-center">Visit Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="rounded overflow-hidden shadow-lg" data-aos="zoom-in">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.8814874987556!2d76.768785475036!3d30.693610387523258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedb5b4910243%3A0x7284d7a5ffcbc498!2sAPAAR%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1748358251443!5m2!1sen!2sin" width="620" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div data-aos="fade-left">
+        <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Apaar Solutions</h3>
+        <p class="text-lg">SCO-108, Ground Floor<br>Sector 47, Chandigarh</p>
+        <p class="mt-4 text-lg">📞 +91-9876543210<br>📧 contact@apaarsolutions.in</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white text-center text-sm py-6 mt-10 shadow-inner">
+  <p>&copy; 2025 Apaar Solutions. All rights reserved.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: false });
+</script>
+<script>
+  const videos = document.querySelectorAll('.autoplay-on-visible');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.play();
+      } else {
+        entry.target.pause();
+        entry.target.currentTime = 0; // reset video when out of view
+      }
+    });
+  }, { threshold: 0.5 }); // at least 50% visible
+
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+</script>
+
+</body>
+</html>
