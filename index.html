@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; }
@@ -81,311 +84,283 @@
 </section>
 
 <section id="products" class="py-16 bg-gradient-to-r from-pink-50 to-purple-100">
-  <div class="container mx-auto px-4" data-aos="fade-left">
+  <div class="container mx-auto px-4" data-aos="fade-up">
     <h2 class="text-4xl font-bold text-purple-700 mb-10 text-center">Our Products</h2>
 
-    <!-- CCTV Surveillance -->
-    <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/cctv.jpg" alt="CCTV" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">CCTV Surveillance</h3>
-          <p class="text-lg text-gray-700 mb-4">
-            Protect your home, office, or commercial premises with our state-of-the-art CCTV surveillance systems. Whether you want to monitor activity in real-time or need playback for incidents, our solutions provide reliable, high-definition footage day and night. Perfect for residential colonies, retail stores, warehouses, and schools.
-          </p>
-          <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Full HD/4K video clarity with night vision</li>
-            <li>Mobile access for live view and playback</li>
-            <li>Motion detection & instant alerts</li>
-            <li>Supports cloud and local recording</li>
-          </ul>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+      <!-- 1. CCTV Surveillance -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+        <img src="images/products/cctv.jpg" alt="CCTV Surveillance" class="rounded-md w-full h-60 object-cover mb-4">
+        <h3 class="text-2xl font-bold text-indigo-700 mb-2">CCTV Surveillance</h3>
+        <p class="text-gray-700 text-sm mb-2">
+          • Full HD & 4K cameras for real-time monitoring<br>
+          • Night vision, motion detection, mobile access<br>
+          • DVR/NVR based setups with expandable storage<br>
+          • Ideal for homes, offices, institutions & shops
+        </p>
+      </div>
+
+      <!-- 2. walkie talkie -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+        <img src="images/products/walkie.jpg" alt="Video Door Phone" class="rounded-md w-full h-60 object-cover mb-4">
+        <h3 class="text-2xl font-bold text-indigo-700 mb-2">Walkie Talkie</h3>
+        <p class="text-gray-700 text-sm mb-2">
+          • Crystal-clear voice transmission over long range<br>
+          • Rechargeable batteries with long standby time<br>
+          • License-free models available<br>
+          • Compact, durable & weather-resistant build
+        </p>
+      </div>
+
+      <!-- 3. Home Automation -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+        <img src="images/products/projector.jpg" alt="Projector" class="rounded-md w-full h-60 object-cover mb-4">
+        <h3 class="text-2xl font-bold text-indigo-700 mb-2">Projector and Home Theatre</h3>
+        <p class="text-gray-700 text-sm mb-2">
+          • High-lumen projectors with HD/4K clarity<br>
+          • Smart Android OS with Wi-Fi & HDMI<br>
+          • Surround sound speaker system included<br>
+          • Perfect for cinema halls, homes & classrooms
+        </p>
+      </div>
+
+      <!-- 4. Intrusion Alarm System -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+        <img src="images/products/alarm.jpg" alt="Intrusion Alarm System" class="rounded-md w-full h-60 object-cover mb-4">
+        <h3 class="text-2xl font-bold text-indigo-700 mb-2">Intrusion Alarm System</h3>
+        <p class="text-gray-700 text-sm mb-2">
+          • Sensors for doors, windows & motion detection<br>
+          • Loud siren & app alerts on unauthorized access<br>
+          • Wireless GSM/WiFi based system<br>
+          • Perfect for homes, shops & offices
+        </p>
+      </div>
+
+      <!-- 5. EPABX Intercom -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+        <img src="images/products/epabx.png" alt="EPABX Intercom" class="rounded-md w-25 h-25 object-cover mb-4">
+        <h3 class="text-2xl font-bold text-indigo-700 mb-2">EPABX Intercom</h3>
+        <p class="text-gray-700 text-sm mb-2">
+          • Internal communication for 4 to 64 users<br>
+          • Call transfer, call waiting & conference features<br>
+          • Ideal for schools, offices, showrooms, societies<br>
+          • Cost-saving internal calls without mobile
+        </p>
+      </div>
+
+      <!-- 6. Biometric Attendance -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+        <img src="images/products/biometric.png" alt="Biometric Attendance" class="rounded-md w-30 h-30 object-cover mb-4">
+        <h3 class="text-2xl font-bold text-indigo-700 mb-2">Biometric Attendance</h3>
+        <p class="text-gray-700 text-sm mb-2">
+          • Fingerprint, face & RFID attendance systems<br>
+          • Automatic reports, shift-wise attendance<br>
+          • Cloud, LAN & USB based systems<br>
+          • Best for institutes, offices & factories
+        </p>
+      </div>
+
+      <!-- 7. Access Control System -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+         <div class="w-full h-80 overflow-hidden rounded-md mb-2">
+        <img src="images/products/dooraccess.jpg" alt="Access Control System" class="rounded-md w-full h-60 object-cover mb-4">
         </div>
+        <h3 class="text-2xl font-bold text-indigo-700 mb-2">Door Access Control System</h3>
+        <p class="text-gray-700 text-sm mb-2">
+          • Restrict access using fingerprint, RFID or face<br>
+          • Secure door locks with logs & audit trails<br>
+          • Integration with time attendance<br>
+          • Used in data centers, labs & sensitive zones
+        </p>
+      </div>
+
+      <!-- 8. Metal Detector & Search Lights -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+        <h3 class="text-2xl font-bold text-indigo-700 mb-2">Display Solutions</h3>
+          <div class="swiper product-slider relative">
+    <div class="swiper-wrapper">
+      
+      <!-- Slide 1 -->
+      <div class="swiper-slide bg-purple-50 rounded-lg p-4 shadow">
+         <div class="w-full h-80 overflow-hidden rounded-md mb-2">
+        <img src="images/products/interactiveled.jpg" alt="interactive led" class="rounded-md w-full h-80 object-cover mb-2">
+       </div>
+        <h4 class="font-semibold text-indigo-700">Interactive Panels</h4>
+        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>Touch-enabled with annotation tools</li>
+          <li>Wireless screen mirroring</li>
+          <li>Built-in Android for apps and browsing</li>
+          <li>Ideal for classrooms & meetings</li>
+        </ul>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide bg-purple-50 rounded-lg p-4 shadow">
+         <div class="w-full h-80 overflow-hidden rounded-md mb-2">
+        <img src="images/products/activeled.jpg" alt="Active LED" class="rounded-md w-full h-80 object-cover mb-2">
+        </div>
+        <h4 class="font-semibold text-indigo-700">Active led</h4>
+        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>Indoor/outdoor LED video walls</li>
+          <li>Ultra-bright, seamless display tiles</li>
+          <li>Supports live video, data, ads</li>
+          <li>Used in events, malls, signage</li>
+        </ul>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide bg-purple-50 rounded-lg p-4 shadow">
+         <div class="w-full h-80 overflow-hidden rounded-md mb-2">
+        <img src="images/products/smarttv.jpg" alt="smart tv" class="rounded-md w-full h-80 object-cover mb-2">
+        </div>
+        <h4 class="font-semibold text-indigo-700">Smart TV</h4>
+        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>Android-enabled with app store</li>
+          <li>Screen casting & internet access</li>  
+          <li>Ideal for education, reception areas</li>
+        </ul>
       </div>
     </div>
 
-    <!-- VDP -->
-    <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/vdp.jpg" alt="VDP" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Video Door Phone (VDP)</h3>
-          <p class="text-lg text-gray-700 mb-4">
-            Stay in control of who enters your premises with our advanced Video Door Phone systems. These devices let you see and talk to visitors before opening the door, adding an essential layer of security for families and professionals alike.
-          </p>
-          <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Clear two-way audio & video communication</li>
-            <li>Night vision camera for low-light monitoring</li>
-            <li>Remote door unlocking (optional models)</li>
-            <li>Multiple indoor screens for multi-room control</li>
-          </ul>
-        </div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next text-indigo-700"></div>
+    <div class="swiper-button-prev text-indigo-700"></div>
+  </div>
+  </div>
+
+      <!-- 9. Fire Alarm System -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+        <img src="images/products/firealarm.png" alt="Fire Alarm System" class="rounded-md w-full h-60 object-cover mb-4">
+        <h3 class="text-2xl font-bold text-indigo-700 mb-2">Fire Alarm System</h3>
+        <p class="text-gray-700 text-sm mb-2">
+          • Smoke, heat & flame detection sensors<br>
+          • Siren & panel based alert system<br>
+          • Wired or wireless models available<br>
+          • Used in buildings, schools & warehouses
+        </p>
+      </div>
+
+      <!-- 10. Public Address System -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+        <img src="images/products/pasystem.jpg" alt="Public Address System" class="rounded-md w-full h-60 object-cover mb-4">
+        <h3 class="text-2xl font-bold text-indigo-700 mb-2">Public Address System</h3>
+        <p class="text-gray-700 text-sm mb-2">
+          • Mic, amplifier, speakers for announcements<br>
+          • Multi-zone paging system for clear messaging<br>
+          • Used in schools, malls, societies, events<br>
+          • Wireless & wired options
+        </p>
+      </div>
+
+
+      <!-- Multi-product Card with Slider -->
+<!-- Multi-product Card with Swiper Carousel (1 slide visible at a time) -->
+<div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+  <h3 class="text-2xl font-bold text-indigo-700 mb-4">VIDEO DOOR PHONE</h3>
+
+  <!-- Swiper Container -->
+  <div class="swiper product-slider relative">
+    <div class="swiper-wrapper">
+      
+      <!-- Slide 1 -->
+      <div class="swiper-slide bg-purple-50 rounded-lg p-4 shadow">
+        <img src="images/products/villavdp.png" alt="VIlla VDP" class="rounded-md w-full h-80 object-cover mb-2">
+        <h4 class="font-semibold text-indigo-700">Villa VDP</h4>
+        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>One-to-one connection (door to house)</li>
+          <li>2-way audio/video communication</li>
+          <li>Door unlock from indoor monitor</li>
+          <li>Supports night vision</li>
+        </ul>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide bg-purple-50 rounded-lg p-4 shadow">
+        <img src="images/products/basipoutdoor.png" alt="Apartment VDP" class="rounded-md w-full h-80 object-cover mb-2">
+        <h4 class="font-semibold text-indigo-700">Apartment VDP</h4>
+        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>Multi-flat connection with central outdoor panel</li>
+          <li>Audio/video call with visitors</li>
+          <li>Optional call forwarding to mobile</li>
+        </ul>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide bg-purple-50 rounded-lg p-4 shadow">
+        <img src="images/products/multiplevdp.png" alt="Society" class="rounded-md w-full h-80 object-cover mb-2">
+        <h4 class="font-semibold text-indigo-700">Society 3 tier Security</h4>
+        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>Central gate, tower entrance, and home unit integration</li>
+          <li>Admin panel with visitor logs</li>
+          <li>Used in gated communities</li>
+        </ul>
       </div>
     </div>
 
-    <!-- Alarm System -->
-    <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/alarm.jpg" alt="Alarm System" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Security Alarm Systems</h3>
-          <p class="text-lg text-gray-700 mb-4">
-            Prevent thefts and break-ins before they happen. Our alarm systems are equipped with intelligent sensors that detect suspicious activity and trigger loud sirens and mobile notifications. Ideal for jewelry shops, offices, godowns, and villas.
-          </p>
-          <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Instant alerts for door/window breach or motion</li>
-            <li>Wireless & wired sensor options available</li>
-            <li>Connects with CCTV and VDP systems</li>
-            <li>Battery backup and remote control</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Walkie Talkie -->
-    <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/walkie.jpg" alt="Walkie Talkie" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Walkie Talkie</h3>
-          <p class="text-lg text-gray-700 mb-4">
-            Maintain instant and uninterrupted communication without depending on mobile networks. Our walkie talkies are rugged, long-range, and reliable — making them the perfect solution for events, security teams, hotels, construction sites, and industrial zones.
-          </p>
-          <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Crystal-clear voice transmission over long range</li>
-            <li>Rechargeable batteries with long standby time</li>
-            <li>License-free models available</li>
-            <li>Compact, durable & weather-resistant build</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- EPABX -->
-    <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/epabx.jpg" alt="EPABX" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">EPABX Systems</h3>
-          <p class="text-lg text-gray-700 mb-4">
-            Organize communication within your business effortlessly. EPABX (Electronic Private Automatic Branch Exchange) allows you to manage internal calls, route external calls efficiently, and enhance professional image — a must-have for any office or institution.
-          </p>
-          <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Connects multiple internal extensions seamlessly</li>
-            <li>Call transfer, hold, voicemail, and intercom features</li>
-            <li>Expandable from 4 to 100+ lines</li>
-            <li>Supports analog, digital, and IP-based systems</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/doorlock.jpg" alt="doorlock" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Home Smart Door Lock</h3>
-            <p class="text-lg text-gray-700 mb-4">
-                  Upgrade your home security with intelligent locking solutions. Our smart door lock offers keyless entry, remote access, and activity logs to ensure your home stays secure and modern.
-            </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li>Fingerprint, PIN, and mobile app access</li>
-                <li>Real-time lock/unlock notifications</li>
-                <li>Emergency power backup</li>
-                <li>Durable metal body with tamper alerts</li>
-            </ul>
-        </div>
-      </div>
-    </div>
-
-        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/projector.jpg" alt="projector" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-          <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Projector and Home Theatre</h3>
-          <p class="text-lg text-gray-700 mb-4">
-            Experience cinema at home with our projector and home theatre systems. Perfect for home entertainment, classrooms, and corporate presentations.
-          </p>
-              <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li>Full HD and 4K resolution support</li>
-                <li>Immersive surround sound systems</li>
-                <li>Smart connectivity with Wi-Fi, HDMI, and Bluetooth</li>
-                <li>Portable and ceiling mount options available</li>
-              </ul>
-
-        </div>
-      </div>
-    </div>
-
-        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/dooraccess.jpg" alt="dooraccess" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-            <h3 class="text-2xl font-semibold mb-2 text-indigo-700">DOOR Access Control System</h3>
-            <p class="text-lg text-gray-700 mb-4">
-              Secure your premises with advanced access control systems. Monitor and manage door entries with biometric, RFID, and card-based access.
-            </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-1">
-              <li>Biometric and RFID based authentication</li>
-              <li>Real-time entry logs and reporting</li>
-              <li>Centralized management for multiple doors</li>
-              <li>Integration with CCTV and alarm systems</li>
-            </ul>
-        </div>
-      </div>
-    </div>
-
-        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/led.jpg" alt="led" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-              <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Interactive Panels, Active LED & Smart TV</h3>
-              <p class="text-lg text-gray-700 mb-4">
-                Engage your audience with high-definition interactive panels, smart TVs, and active LED displays. Ideal for smart classrooms, boardrooms, and public displays.
-              </p>
-              <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li>Touch-enabled smart panels</li>
-                <li>Wireless screen mirroring and annotation</li>
-                <li>Energy-efficient and high brightness LEDs</li>
-                <li>Smart TV features with Android OS</li>
-              </ul>
-        </div>
-      </div>
-    </div>
-
-        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/lift.jpg" alt="lift" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-            <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Lift Camera Solutions</h3>
-            <p class="text-lg text-gray-700 mb-4">
-              Enhance safety inside elevators with our discreet lift camera solutions. Monitor activity in real-time to prevent mishaps and improve security.
-            </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-1">
-              <li>Compact, hidden design for elevators</li>
-              <li>Night vision and HD recording</li>
-              <li>Remote viewing on mobile & PC</li>
-              <li>Seamless integration with existing CCTV system</li>
-            </ul>
-
-        </div>
-      </div>
-    </div>
-
-        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/accesspoint.jpg" alt="accesspoint" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-            <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Access Point Solutions</h3>
-            <p class="text-lg text-gray-700 mb-4">
-              Boost your wireless connectivity with our high-performance access points. Designed for homes, offices, and institutions demanding reliable internet.
-            </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-1">
-              <li>Dual-band Wi-Fi support</li>
-              <li>Seamless roaming with mesh technology</li>
-              <li>Multiple user support with fast speeds</li>
-              <li>Easy setup with cloud-based management</li>
-            </ul>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Vehicle Number Plate Reader Camera -->
-<div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <img src="images/products/numbercctv.jpg" alt="numbercctv" class="rounded shadow-md w-[300px] h-[200px]">
-    <div>
-      <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Vehicle Number Plate Reader Camera</h3>
-      <p class="text-lg text-gray-700 mb-4">
-        Automatically capture and recognize vehicle number plates with our high-precision ANPR (Automatic Number Plate Recognition) cameras. Ideal for gated communities, toll booths, parking lots, and high-security zones.
-      </p>
-      <ul class="list-disc list-inside text-gray-700 space-y-1">
-        <li>Real-time number plate detection and recording</li>
-        <li>High-speed vehicle recognition, even at night</li>
-        <li>Integration with boom barriers and access systems</li>
-        <li>Supports database logging and search features</li>
-      </ul>
-    </div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next text-indigo-700"></div>
+    <div class="swiper-button-prev text-indigo-700"></div>
   </div>
 </div>
 
+      <!-- Multi-product Card with Slider -->
+<!-- Multi-product Card with Swiper Carousel (1 slide visible at a time) -->
+<div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-6" data-aos="zoom-in">
+  <h3 class="text-2xl font-bold text-indigo-700 mb-4">Entrance Control</h3>
 
-        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/firealarm.png" alt="firealarm" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-              <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Fire Alarm System</h3>
-              <p class="text-lg text-gray-700 mb-4">
-                Protect lives and property with our smart fire alarm systems. Get instant alerts during smoke or fire emergencies with quick response triggers.
-              </p>
-              <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li>Smoke, heat, and flame detectors</li>
-                <li>Audible and visual alarms</li>
-                <li>24/7 monitoring and remote alerts</li>
-                <li>Complies with safety regulations</li>
-              </ul>
+  <!-- Swiper Container -->
+  <div class="swiper product-slider relative">
+    <div class="swiper-wrapper">
+      
+      <!-- Slide 1 -->
+      <div class="swiper-slide bg-purple-50 rounded-lg p-4 shadow">
+        <img src="images/products/flapbarrier.jpg" alt="Sliding machine" class="rounded-md w-full h-80 object-cover mb-2">
+        <h4 class="font-semibold text-indigo-700">Sliding Machine</h4>
+        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>RFID/Biometric operated gates</li>
+          <li>Integration with access control system</li>
+          <li>Auto open/close for authorized entries</li>
+        </ul>
+      </div>
 
-        </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide bg-purple-50 rounded-lg p-4 shadow">
+        <img src="images/products/x-raybaggage.jpg" alt="xrayBaggage" class="rounded-md w-full h-80 object-cover mb-2">
+        <h4 class="font-semibold text-indigo-700">X-Ray Baggage Machine</h4>
+        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>Detect metals, weapons, and restricted items</li>
+          <li>Real-time imaging with alarms</li>
+          <li>Used in malls, airports, metros</li>
+        </ul>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide bg-purple-50 rounded-lg p-4 shadow">
+        <img src="images/products/metaldetector.jpg" alt="DoorFrame" class="rounded-md w-full h-80 object-cover mb-2">
+        <h4 class="font-semibold text-indigo-700">Door frame Metal Detector</h4>
+        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>Walkthrough detection for hidden metal</li>
+          <li>Adjustable sensitivity levels</li>
+        </ul>
+      </div>
+
+
+            <div class="swiper-slide bg-purple-50 rounded-lg p-4 shadow">
+        <img src="images/products/handheld.jpg" alt="MetalDetector" class="rounded-md w-full h-80 object-cover mb-2">
+        <h4 class="font-semibold text-indigo-700">Hand held Metal detector</h4>
+        <ul class="text-gray-600 text-sm list-disc list-inside space-y-1">
+          <li>Quick scan for people or bags</li>
+          <li>Compact & rechargeable</li>
+        </ul>
       </div>
     </div>
 
-        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/mdvr.jpeg" alt="mdvr" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-            <h3 class="text-2xl font-semibold mb-2 text-indigo-700">MDVR Solutions</h3>
-            <p class="text-lg text-gray-700 mb-4">
-              Monitor vehicle activity with Mobile DVR (MDVR) systems. Perfect for buses, trucks, and emergency vehicles, providing onboard surveillance and GPS tracking.
-            </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-1">
-              <li>4 to 16 channel camera support</li>
-              <li>Live tracking with GPS & 4G SIM</li>
-              <li>Shockproof and high-temperature resistant</li>
-              <li>Remote video access and alerts</li>
-            </ul>
-
-        </div>
-      </div>
-    </div>
-
-        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/pasystem.jpg" alt="pasystem" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-            <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Public Address Sound System</h3>
-            <p class="text-lg text-gray-700 mb-4">
-              Deliver clear announcements and background music with powerful PA sound systems. Ideal for schools, offices, factories, and public spaces.
-            </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-1">
-              <li>Wired and wireless mic support</li>
-              <li>Multi-zone control with clear audio</li>
-              <li>Wall-mounted and portable speaker options</li>
-              <li>Integration with fire alarms and emergency systems</li>
-            </ul>
-
-        </div>
-      </div>
-    </div>
-
-        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition transform hover:scale-105 mb-10" data-aos="zoom-in">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="images/products/roadsafety.jpg" alt="roadsafety" class="rounded shadow-md w-[300px] h-[200px]">
-        <div>
-            <h3 class="text-2xl font-semibold mb-2 text-indigo-700">Road Safety Devices</h3>
-            <p class="text-lg text-gray-700 mb-4">
-              Ensure safer roads and organized traffic flow with our wide range of Road Safety Devices. From reflective sign boards to speed breakers and traffic cones, our solutions are ideal for highways, parking lots, gated societies, schools, and commercial complexes.
-            </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-1">
-              <li>Reflective signboards and safety mirrors</li>
-              <li>Flexible bollards and plastic barriers</li>
-              <li>Rubber speed breakers & wheel stoppers</li>
-              <li>Traffic cones with high-visibility reflectors</li>
-              <li>Customized safety signage for schools/zones</li>
-            </ul>
-        </div>
-      </div>
-    </div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next text-indigo-700"></div>
+    <div class="swiper-button-prev text-indigo-700"></div>
   </div>
+</div>
 </section>
 
 <!-- DEMO -->
@@ -555,6 +530,13 @@
       <img src="images/clients/client21.jpeg" alt="Client 21" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
       <img src="images/clients/client22.png" alt="Client 22" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
       <img src="images/clients/client23.png" alt="Client 23" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client24.png" alt="Client 24" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client25.png" alt="Client 25" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client26.jpg" alt="Client 26" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client27.jpeg" alt="Client 27" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client28.png" alt="Client 28" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client29.png" alt="Client 29" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
+      <img src="images/clients/client30.png" alt="Client 30" class="h-16 mx-auto object-contain hover:scale-105 transition-transform duration-300">
 
       <!-- Add more logos as needed -->
     </div>
@@ -586,7 +568,7 @@
       <div data-aos="fade-left">
         <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Apaar Solutions</h3>
         <p class="text-lg">SCO-108, Ground Floor<br>Sector 47, Chandigarh</p>
-        <p class="mt-4 text-lg">📞 +91-9876543210<br>📧 contact@apaarsolutions.in</p>
+        <p class="mt-4 text-lg">📞 +91-99884-26677<br>📧 apaarsolutions@gmail.com</p>
       </div>
     </div>
   </div>
@@ -619,6 +601,25 @@
     observer.observe(video);
   });
 </script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  new Swiper('.product-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    grabCursor: true,
+  });
+</script>
+
+
 
 </body>
 </html>
